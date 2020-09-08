@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: var(--secondary-font);
+}
+
+/*-----VARIABLES----*/
+:root {
+  --primary-color: rgb(45, 189, 157);
+  --primary-font: Montserrat, sans-serif;
+  --secondary-font: Arial, Helvetica, sans;
+}
+
+/*-----BUTTONS----*/
+.btn {
+  padding: 1.3rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn__nav {
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-header {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: var(--primary-font);
+}
+
+.btn-huluplus {
+  background-color: transparent;
+  border: 4px solid #fff;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: var(--primary-font);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+/*-----TEXT----*/
+
+.text-xs {
+  font-size: 0.5rem;
+}
+
+/*-----HEADER----*/
+header {
+  height: 80vh;
+  background-image: url("./img/Homepage_Masthead_Test_DESKTOP_3200x1320-v4c_6.16.20.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  font-family: var(--primary-font);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.nav__toggle {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  z-index: 100;
+}
+.nav_toggle-black {
+  color: #000;
+}
+
+.nav__menu {
+  height: 75vh;
+  width: 100wh;
+
+  background: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 3rem;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
+  padding: 5rem 1rem;
+}
+
+.nav__link a {
+  font-weight: 200;
+  font-size: 2.1rem;
+}
+
+.header__main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__main-toptext {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  padding: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header__main-img {
+  height: 8rem;
+  min-height: auto;
+  padding: 0 2rem 3rem;
+}
+
+.header__main h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header__main p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 100;
+}
+
+.header__main .text-xs {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+/*---HULU PLUS---*/
+.huluplus__container {
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: linear-gradient(
+    318.68deg,
+    rgb(15, 73, 92) 0%,
+    rgb(13, 54, 64) 49.72%,
+    rgb(8, 20, 31) 100%
+  );
+  padding: 0 2rem;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.huluplus__container img {
+  width: 100%;
+}
+
+.huluplus__text .header__main-toptext {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.huluplus__main-text {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-family: var(--primary-font);
+  margin: -1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.huluplus__text .text-xs {
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.huluplus__button {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.huluplus__button p {
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  margin-top: -1rem;
+}
+
+/*-----IMG---*/
+.image_hulubig {
+  height: 100vh;
+  background-image: url("img/Desktop-1600_Content-Grid (1).jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image_hulubig img {
+  width: 100%;
+}
+
+.hulu__table {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-items: flex-start;
+  zoom: 80%;
+}
+
+.hulu__table-table {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+}
+.hulu__table-table i {
+  font-size: 2.5rem;
+}
+.hulu__table-table .bx-minus {
+  color: rgba(128, 128, 128, 0.4);
+}
+
+.hulu__table-table tbody td {
+  text-align: center;
+}
+
+.hulu__table-table tbody tr td:nth-child(1),
+.hulu__table-table thead th:nth-child(1) {
+  text-align: left;
+}
+.hulu__table-table tbody tr td:nth-child(3),
+.hulu__table-table thead th:nth-child(3) {
+  background-color: rgb(247, 248, 250);
+}
+
+.hulu__table-table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: white;
+}
+
+.hulu__table-table thead th,
+.hulu__table-table tbody tr td {
+  padding: 1rem;
+}
+.hulu__table-table thead th,
+.hulu__table-table tbody tr td {
+  border-bottom: 1px solid rgb(237, 239, 242);
+}
+.hulu__table-table {
+  border-collapse: collapse;
+}
+
+.hulu__table-div {
+  height: 70vh;
+  overflow: auto;
+}
+
+.hulu__table-table p {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 1);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.hulu__table-table thead th:nth-child(1) p {
+  text-transform: none;
+  margin-bottom: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.hulu__table-table thead th {
+  height: 25vh;
+  vertical-align: bottom;
+  padding-bottom: 3rem;
+}
+.hulu__table-table thead th:nth-child(1) {
+  padding-bottom: 2rem;
+  width: 500px;
+}
+
+.hulu__table-table thead th:nth-child(1) p span {
+  color: black;
+}
+.hulu__table-table h2 {
+  color: rgba(22, 20, 20, 1);
+  letter-spacing: -0.1rem;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-family: var(--secondary-font);
+}
+
+.hulu__table-table .btn {
+  padding: 1.2rem 1.9rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.table_btn {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  background-color: rgb(103, 114, 138);
+  margin-bottom: 0.8rem;
+  display: inline-block;
+
+  border-radius: 15rem;
+}
+
+/*---FOOTER---*/
+
+.footer {
+  background-color: rgb(235, 237, 242);
+  color: rgb(103, 114, 138, 1);
+}
+.footer__links {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 90%;
+  padding: 3rem;
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(103, 114, 138, 0.8);
+}
+.footer__links li {
+  padding-bottom: 1rem;
+}
+.footer__links a {
+  color: rgb(103, 114, 138, 0.8);
+  font-weight: 300;
+}
+.footer__socials {
+  height: 10vh;
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  font-size: 2rem;
+}
+.footer__socials i {
+  padding: 1rem;
+}
+@media screen and (max-width: 980px) {
+  .hulu__table {
+    zoom: 60%;
+  }
+  .footer__links {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1rem;
+
+    font-size: 0.8rem;
+  }
+  .header__main-img {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image_hulubig {
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .hulu__table {
+    zoom: 50%;
+  }
+  .footer__links {
+    font-size: 0.5rem;
+  }
+  .huluplus__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+    height: auto;
+
+    text-align: center;
+  }
+  .huluplus__container img {
+    width: 60%;
+  }
+  .huluplus__container div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hulu__table {
+    zoom: 40%;
+  }
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .hulu__table-div {
+    height: 80vh;
+    overflow: auto;
+  }
+  .hulu__table {
+    height: 100vh;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hulu__table-table .btn {
+    padding: 0.5rem 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+  }
+  .hulu__table {
+    zoom: 30%;
+  }
+}
